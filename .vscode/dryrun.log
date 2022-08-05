@@ -1,0 +1,15 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/hamchur/Desktop/FdF'
+make -C libft
+make -C minilibx_macos
+ 
+gcc -Wall -Wextra -Werror -I/usr/include -Iminilibx_macos -O3 -c main.c -o main.o
+gcc -Wall -Wextra -Werror -I/usr/include -Iminilibx_macos -O3 -c sources/draw.c -o sources/draw.o
+ 
+gcc -Wall -Wextra -Werror -I/usr/include -Iminilibx_macos -O3 -c sources/threed.c -o sources/threed.o
+gcc -Wall -Wextra -Werror -I/usr/include -Iminilibx_macos -O3 -c sources/map_fill.c -o sources/map_fill.o
+gcc -Wall -Wextra -Werror -I/usr/include -Iminilibx_macos -O3 -c sources/map_init.c -o sources/map_init.o
+gcc -Wall -Wextra -Werror -I/usr/include -Iminilibx_macos -O3 -c sources/mlx_global_init.c -o sources/mlx_global_init.o
+gcc -Wall -Wextra -Werror main.o sources/draw.o sources/threed.o sources/map_fill.o sources/map_init.o sources/mlx_global_init.o libft/libft.a minilibx_macos/libmlx.a -framework OpenGL -framework AppKit -o fdf
+make: Leaving directory `/Users/hamchur/Desktop/FdF'
+ 
