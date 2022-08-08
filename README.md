@@ -1,3 +1,3 @@
 # FdF
 ## Визуализация
-![alt-текст](https://raw.githubusercontent.com/VBrazhnik/FdF/master/images/42.png)
+![alt-текст](https://i.postimg.cc/jSkj7HNn/1.png)
